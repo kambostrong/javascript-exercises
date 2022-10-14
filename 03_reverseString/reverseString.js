@@ -1,7 +1,7 @@
 let array;
-let result;
+let result = '';
 let arrayLength;
-let combinedResult;
+let combinedResult = '';
 //STRING STARTS AS NORMAL WORD, FEED BACK THE REVERSE
 //EG, it's fed 'hello' and you need to give back 'olleh'
 //As an array, hello has 5 characters which means an array length of 5
@@ -19,15 +19,26 @@ const reverseString = function(string) {
     //    return result;
     //}
     arrayLength = array.length;
+
     result = array[arrayLength - 1];
-    arrayLength = arrayLength - 1;
+    //combinedResult = combinedResult + result;
+    arrayLength = --arrayLength;
+
     result = result + array[arrayLength - 1];
-    arrayLength = arrayLength - 1;
+    //combinedResult = combinedResult + result;
+    arrayLength = --arrayLength;
+
     result = result + array[arrayLength - 1];
-    arrayLength = arrayLength - 1;
+    //combinedResult = combinedResult + result;
+    arrayLength = --arrayLength;
+
     result = result + array[arrayLength - 1];
-    arrayLength = arrayLength - 1;
+    //combinedResult = combinedResult + result;
+    arrayLength = --arrayLength;
+
     result = result + array[arrayLength - 1];
+    //combinedResult = combinedResult + result;
+    arrayLength = --arrayLength;
 
     return result;
 };
