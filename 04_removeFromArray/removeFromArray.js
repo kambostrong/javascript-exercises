@@ -17,9 +17,15 @@ const removeFromArray = function(array, ...num) {
     // return array;
     ////WORKS
 
+// for (let numLength = (num.length - 1); numLength > 0; numLength = numLength - 1){
+//     let indexToSplice = array.indexOf(num[numLength]);
+//     array.splice(indexToSplice, 1);
+// }
+let numLength = num.length - 1;
+let indexToSplice = array.indexOf(num[numLength]);
+    array.splice(indexToSplice, 1);
+return array;
 
-
-    
 };
 
 // Do not edit below this line
