@@ -6,6 +6,7 @@ const removeFromArray = function(array, ...num) {
 
 
     for (let numLength = (num.length - 1); numLength >= 0; numLength = numLength - 1){
+    if (array.includes(num[numLength]) === false){continue;}
     let indexToSplice = array.indexOf(num[numLength]);
     array.splice(indexToSplice, 1);
 }
