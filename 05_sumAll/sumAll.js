@@ -5,6 +5,14 @@ const sumAll = function(a, z) {
 let smaller = 0;
 let larger = 0;
 let finalSum = 0;
+let error = "ERROR";
+
+if (typeof (a&&z) !== "number"){
+    return error;
+} else if (a < 0 || z < 0) {
+    return error;
+} else
+
 if (a > z){
     larger = a;
     smaller = z;
